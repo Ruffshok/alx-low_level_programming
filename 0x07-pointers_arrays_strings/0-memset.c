@@ -1,18 +1,18 @@
-#include "main.h"
+#include <main.h>
 /**
- * _memset - sets memory to array
- * @s: array to set
- * @b: value to set it as
+ * _memcpy - copies from source to dest values in array
+ * @dest: destination to copy to
+ * @src: source to copy from
  * @n: n amount of times
- * Return: char value of s
+ * Return: return the string value
  */
-char *_memset(char *s, char b, unsigned int n)
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int i;
 
 	for (i = 0; i < n; i++)
 	{
-		s[i] = b;
+		dest[i] = src[i];
 	}
-	return (s);
+	return (dest);
 }
