@@ -1,0 +1,1 @@
+update for static libraries
